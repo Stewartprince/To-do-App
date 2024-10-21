@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced To Do App</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="../Background Video HD.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="container">
+        <h1>To Do App</h1>
+        <div class="input-group">
+            <input type="text" placeholder="Enter To-do List" id="todo-input"><br>
+            <input type="date" id="due-date"><br>
+            <input type="time" id="time"><br>
+            <br>
+            <button onclick="addTodo()" id="addtodobtn">Add Todo</button>
+        </div>
+        <div class="filter-group">
+            <button onclick="filterTasks('all')" id="allbtn">All</button>
+            <button onclick="filterTasks('completed')" id="completedbtn">Completed</button>
+            <button onclick="filterTasks('pending')" id="pendingbtn">Pending</button>
+        </div>
+        <ul id="todo-list">
+            <li>
+                Task Name
+                <div class="action-buttons">
+                    <button>Edit</button>
+                    <button>Complete</button>
+                    <button>Delete</button>
+                </div>
+            </li>
+        </ul>
+        
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
